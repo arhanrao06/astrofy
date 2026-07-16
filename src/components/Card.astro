@@ -1,12 +1,13 @@
 ---
 const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 import { Image } from "astro:assets";
+import withBase from "../lib/withBase";
 ---
 
 <div class="md:w-1/3 w-full">
-  <a href={url} target={target}>
+  <a href={withBase(url)} target={target}>
     <div class="card bg-base-100 transition ease-in-out hover:shadow-xl mx-6 my-2 hover:scale-[102%]">
-      <Image width={750} height={422} format="webp" src={img} alt={title} />
+      <Image width={750} height={422} format="webp" src={withBase(img)} alt={title} />
       <div class="card-body">
         <h2 class="card-title">
           {title}
