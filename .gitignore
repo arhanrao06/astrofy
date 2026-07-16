@@ -20,3 +20,5 @@ pnpm-debug.log*
 
 # Astro
 .astro/
+# local helper backups
+.astrofy-backup/

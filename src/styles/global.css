@@ -1,3 +1,13 @@
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+
+/* Warm orange gradient background for the main content pages.
+   Light peach up top blending into a soft coral-orange lower down,
+   kept light enough that the dark text stays easy to read. */
+.drawer-content {
+    background-image: linear-gradient(160deg, #FFF4EC 0%, #FFE2D1 45%, #FFC8B0 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
