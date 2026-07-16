@@ -22,3 +22,6 @@ pnpm-debug.log*
 .astro/
 # local helper backups
 .astrofy-backup/
+
+# local editor/preview config
+.claude/
